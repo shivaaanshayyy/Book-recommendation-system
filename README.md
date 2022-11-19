@@ -29,15 +29,29 @@ Contains the book rating information. Ratings (Book-Rating) are either explicit,
 3. Collaborative-filtering-based
 4. Hybrid-based
 
-In this project, We are using:
+### In this project, We are using:
 1. Collaborative-filtering-based recommender system:
 Here all the data is taken as multi-dimensional points.
 All the books are taken as data points and we use euclidean distance to find the books that are nearest to the one. Then we take those books and display them.
-Here users with similar tastes on books are grouped together. So if User A and User B are similar, User A likes book x and book y while User B likes book x, the system recommmends book y to User A.¶
+Here users with similar tastes on books are grouped together. So if User A and User B are similar, User A likes book x and book y while User B likes book x, the system recommmends book y to User A.
+
+Here we consider only those users that have rated atleast 200 books and we consider only those books that have atleast 50 ratings so as to make the system more intelligent.
 
 2. Popularity-based recommender system:
 With this, we display the top 50 books based on the most-ratings given by the users.
 We are only taking the books that have recieved more than 250 ratings and then we calculate the average rating.
+
+## Evaluation Metric:
+We used Cosine-similarity to calculate the similarity-scores and hence recommend the books based on them.
+
+### Review-Scraper:
+Here, for scraping the reviews for a book, we take the isbn and use webscraping to get the ratings from goodreads.
+We then display the most appeared words as a word cloud.
+
+
+
+
+
 
 
 

@@ -36,7 +36,7 @@ All the books are taken as data points and we use euclidean distance to find the
 
 2. Popularity-based recommender system:
 With this, we display the top 50 books based on the most-ratings given by the users.
-We are only taking the books that have recieved more than 250 ratings.
+We are only taking the books that have recieved more than 250 ratings and then we calculate the average rating.
 
 
 

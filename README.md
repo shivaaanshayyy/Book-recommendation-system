@@ -33,6 +33,7 @@ In this project, We are using:
 1. Collaborative-filtering-based recommender system:
 Here all the data is taken as multi-dimensional points.
 All the books are taken as data points and we use euclidean distance to find the books that are nearest to the one. Then we take those books and display them.
+Here users with similar tastes on books are grouped together. So if User A and User B are similar, User A likes book x and book y while User B likes book x, the system recommmends book y to User A.¶
 
 2. Popularity-based recommender system:
 With this, we display the top 50 books based on the most-ratings given by the users.
